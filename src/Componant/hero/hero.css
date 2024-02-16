@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgb(15, 15, 15) 100%,
+    rgba(0, 0, 0, 0.757) 100%
+  );
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+.main .slider {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.main .slider .slides {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.main .slider .slides.current {
+  z-index: 1;
+  opacity: 1;
+}
+
+.main .slider .slides:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("https://mediacity.co.in/delici/static/media/slider-3.e1ecb94135ee27af4d51.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main .slider .slides:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("https://mediacity.co.in/delici/static/media/slider-2.9451ac56da49c59fb729.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main .slider .slides:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("https://mediacity.co.in/delici/static/media/slider-1.427b3237a3c8fa6857c0.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main .slider .slides .hero-inner > * {
+  opacity: 0;
+  transform: translateY(
+    100%
+  ); /* Initially hide all child elements and move them below the container */
+}
+.main .slider .slides .hero-inner {
+  top: 0;
+  margin: 90px auto;
+  width: 950px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+  /* Add delay */
+}
+.main .slider .slides.current .hero-inner .animation {
+  animation: fadeIn 1s ease forwards; /* Add animation */
+  animation-delay: 0.5s;
+}
+/* Increase animation speed for slide-in */
+.main .slider .slides.current .hero-inner > *:nth-child(n) {
+  animation: slideIn 0.1s ease forwards; /* Decrease animation duration to make it faster */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%); /* Move from below the container */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+  }
+}
+
+/* Apply animation to the first child */
+.main .slider .slides.current .hero-inner > *:nth-child(1) {
+  animation: slideIn 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Apply animation to the second child */
+.main .slider .slides.current .hero-inner > *:nth-child(2) {
+  animation: slideIn 1s ease forwards;
+  animation-delay: 1s;
+}
+
+/* Apply animation to the third child */
+.main .slider .slides.current .hero-inner > *:nth-child(3) {
+  animation: slideIn 1s ease forwards;
+  animation-delay: 1.5s;
+}
+
+/* Apply animation to the fourth child */
+.main .slider .slides.current .hero-inner > *:nth-child(4) {
+  animation: slideIn 1s ease forwards;
+  animation-delay: 2s;
+}
+
+/* Apply animation to the fifth child */
+.main .slider .slides.current .hero-inner > *:nth-child(5) {
+  animation: slideIn 1s ease forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%); /* Move from below the container */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+  }
+}
+.pattern-img {
+  width: 10%;
+  padding-top: 25px;
+}
+
+.main .prev {
+  position: fixed;
+  color: #fff;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 99;
+  font-size: 1.5em;
+  font-weight: 600;
+  border: 2px solid #fff;
+  padding: 10px 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+}
+
+.main .next {
+  position: fixed;
+  color: #fff;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  z-index: 99;
+  font-size: 1.5em;
+  font-weight: 600;
+  border: 2px solid #fff;
+  padding: 10px 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main .prev:hover,
+.main .next:hover {
+  background: #16a085;
+  border-color: #16a085;
+}
+
+.button {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 50px;
+  display: inline-block;
+  position: relative;
+  border: 2px solid rgb(245, 222, 165);
+  text-align: center;
+  line-height: 60px;
+  height: 20px;
+  width: 190px;
+
+  color: rgb(245, 222, 165);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.button:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  border-radius: 0 0 100% 100%;
+  z-index: -1;
+  background-color: rgb(245, 222, 165);
+  opacity: 1;
+  transition: all 0.4s ease, opacity ease;
+}
+.button:after {
+  position: absolute;
+  content: "View Our Menu";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease;
+}
+
+.button:hover:before {
+  height: 100%;
+  opacity: 1;
+  border-radius: 0%;
+}
+.button:hover:after {
+  opacity: 0; /* Hide the "View Our Menu" text on hover */
+}
+
+.button {
+  padding: 15px;
+  position: relative;
+  display: block;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  padding-top: 20px;
+  transition-duration: 0.2s;
+  color: black;
+}
+
+.simple-btn {
+  display: block;
+  color: rgb(10, 10, 10);
+  position: relative;
+  bottom: -700%;
+  transition: 0.8s;
+}
+
+.button:hover .simple-btn {
+  bottom: 100%;
+}
+
+.box1 {
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 30px;
+  transform: rotate(45deg);
+  border: 1px solid rgb(247, 212, 124);
+  text-align: center;
+  z-index: 1;
+}
+
+.arrow-icon {
+  color: rgb(247, 212, 124);
+  /* transform: rotate(45deg); */
+  position: fixed;
+  transform: rotate(-45deg);
+}
+.box2 {
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  right: 30px;
+  transform: rotate(45deg);
+  border: 1px solid rgb(247, 212, 124);
+  text-align: center;
+}
+.arrow-icon2 {
+  color: rgb(247, 212, 124);
+  position: fixed;
+  transform: rotate(-45deg);
+}
+
+.box1:hover {
+  background-color: rgb(247, 212, 124);
+}
+
+.box1:hover .arrow-icon {
+  color: black; /* Change this to the desired color for the arrow icon */
+}
+
+.box2:hover {
+  background-color: rgb(247, 212, 124);
+}
+.box2:hover .arrow-icon2 {
+  color: black; /* Change this to the desired color for the arrow icon */
+}
+.my-div-a {
+  position: absolute;
+  width: 90px;
+  height: 95px;
+  top: 84vh;
+  right: 5%;
+  z-index: 1;
+}
+
+.book-rot {
+  width: 87px;
+  height: 92px;
+  border: 1px solid rgb(245, 222, 165);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: mymove 10s linear infinite;
+}
+.book-icon {
+  text-align: center;
+  margin: auto;
+  background-color: rgb(235, 215, 164);
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: black;
+}
+.book-icon > p {
+  margin: 0;
+}
+
+@keyframes mymove {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ////// */
+
+.hero-sp {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: rgb(245, 222, 165);
+  font-size: 13px;
+  font-weight: 500;
+}
+.hero-content {
+  margin: 0px 100px;
+}
+.pattern-img {
+  width: 10%;
+  padding-top: 25px;
+}
+.flav {
+  font-size: 96px;
+  color: white;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 0px;
+}
+.flav > .sea {
+  padding: 0px 150px;
+}
+.text {
+  font-size: 23px;
+  color: white;
+  margin-top: 10px;
+}
+.arrow-icon {
+  color: rgb(247, 212, 124);
+  /* transform: rotate(45deg); */
+  position: fixed;
+  transform: rotate(-45deg);
+}

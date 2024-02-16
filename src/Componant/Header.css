@@ -1,0 +1,384 @@
+.header-section {
+  position: relative;
+  margin: 0 auto;
+  z-index: 20;
+}
+.main-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px;
+  justify-content: center;
+}
+
+.menu {
+  align-self: center;
+  padding-left: 80px;
+  color: white;
+  font-size: 35px;
+  position: relative;
+}
+.menu-inner {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-inner span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  background-color: azure;
+  transform: rotate(0deg);
+  transition: all 1s ease-in-out; /* Ensure smooth transition for all spans */
+}
+
+.menu-inner span:nth-child(1) {
+  bottom: 15px;
+  animation: myframes 0.9s infinite;
+  animation-delay: 0.2s;
+}
+
+.menu-inner span:nth-child(2) {
+  bottom: 8px;
+  animation: myframes 0.9s infinite;
+  animation-delay: 0.6s;
+}
+
+.menu-inner span:nth-child(3) {
+  bottom: 1px;
+  animation: myframes 0.9s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes myframes {
+  0% {
+    width: 10px;
+  }
+  100% {
+    width: 31px;
+  }
+}
+
+.sidebar-hide {
+  position: absolute;
+  top: 0px;
+  padding: 0 20px;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.6s ease-in-out;
+}
+.sidebar-show {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  transform: translateX(0%);
+  transition: all 0.6s ease-in-out;
+}
+.sidebar-inner {
+  background-color: aqua;
+  padding-top: 60px;
+}
+.close-icon {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: block;
+  font-size: 27px;
+}
+.close-icon:hover {
+  color: rgb(245, 222, 165);
+}
+.dropbtn {
+  border: none;
+  background-color: transparent;
+  font-size: 13px;
+  color: rgb(48, 47, 46);
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.diamond-icon {
+  padding-right: 10px;
+}
+
+.border {
+  border-top: 1px solid cadetblue;
+  padding: 11px 0px;
+  margin: 0px;
+}
+.con-bor {
+  padding: 10px 0px;
+  /* border-top: 1px solid cadetblue; */
+  border-bottom: 1px solid cadetblue;
+  margin: 0;
+}
+li > .pad {
+  padding-top: 10px;
+}
+.dropdown-content-none {
+  display: none;
+}
+.dropdown-content {
+  font-size: 13px;
+  color: rgb(235, 215, 164);
+}
+.dropdown-content > ul {
+  padding: 0px;
+  margin: 0px;
+}
+.dropdown-content > ul > li > a {
+  text-decoration: none;
+}
+.dropdown-content > ul > li {
+  list-style: none;
+  text-align: left;
+  /* border-top: 1px solid cadetblue; */
+  /* padding: 10px 0px; */
+}
+
+.sidebar-img {
+  text-align: center;
+  padding: 0 80px;
+}
+.inner-contant {
+  padding: 50px 60px;
+  width: 230px;
+  font-size: 16px;
+}
+
+.dropbtn > .home {
+  padding-right: 10px;
+  color: rgb(235, 215, 164);
+}
+
+.arrow4 {
+  padding-left: 215px;
+}
+.subpages > li > a {
+  text-decoration: none;
+}
+.subpages > li {
+  list-style: none;
+}
+
+.subpages {
+  padding: 0px;
+  font-size: 11px;
+}
+.subpages-display-none {
+  display: none;
+}
+.sub-border {
+  border-top: 1px solid cadetblue;
+  padding: 12px 0px;
+}
+
+li > button {
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  padding: 0;
+  font-size: 12px;
+}
+li > button > a {
+  text-decoration: none;
+}
+.pad {
+  padding: 10px 0;
+}
+/* sidebar end */
+
+.header-cont {
+  margin: auto;
+}
+
+.find {
+   text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+ margin-right: 80px;
+  /* display: inline-block; */
+  border: 2px solid rgb(245, 222, 165);
+  text-align: center;
+  line-height: 60px;
+  height: 20px;
+  width: 190px;
+  background-color: rgb(245, 222, 165);
+  color: black;
+  z-index: 1;
+  overflow: hidden;
+  justify-self: right;
+  align-self: center;
+   padding: 15px 0px;
+  position: relative;
+  display: block;
+  transition-duration: 0.2s;
+}
+.find:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  border-radius: 0 0 100% 100%;
+  z-index: -1;
+  background-color: black;
+  /* color: white; */
+  opacity: 1;
+  transition: all 0.4s ease, opacity ease;
+}
+.find:after {
+  position: absolute;
+  content: "find a table";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease;
+}
+
+.find:hover:before {
+  height: 100%;
+  opacity: 1;
+  border-radius: 0%;
+}
+.find:hover:after {
+  opacity: 0; /* Hide the "View Our Menu" text on hover */
+}
+
+
+.find:hover {
+  padding-top: 20px;
+  transition-duration: 0.2s;
+}
+
+.btn-find {
+  display: block;
+  color:white;
+  position: relative;
+  bottom: -700%;
+  transition: 0.4s;
+  padding: 0px 40px;
+}
+.find:hover .btn-find {
+  bottom: 100%;
+}
+
+.container {
+  position: relative;
+  overflow: hidden; /* Hide overflowing menus */
+}
+
+.menus {
+  position: absolute;
+  top: 50%;
+  left: 0px; /* Initially hidden outside the container */
+  transform: translateY(-50%);
+  transition: left 0.2s ease;
+  font-size: 12px;
+}
+
+.container:hover .menus {
+  left: 20px; /* Move the menus inside container on hover */
+  color: rgb(235, 215, 164);
+}
+
+.dropbtn .dia {
+  position: absolute; /* Position diamond icon absolutely */
+  top: 50%;
+  left: -25px; /* Position diamond icon to the left */
+  transform: translateY(-50%);
+  display: none; /* Hide diamond icon by default */
+}
+
+.container:hover .dia {
+  display: inline; /* Show diamond icon when dropbtn is hovered */
+}
+.menu__list {
+  list-style: none;
+  font-size: 12px;
+
+  /* border-bottom: 1px solid cadetblue; */
+}
+.menu__list__diamond {
+  display: none;
+  color: rgb(235, 215, 164);
+}
+.list__containt {
+  display: inline-block;
+  color: black;
+  transform: translateX(0px);
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+.menu__list:hover .menu__list__diamond {
+  display: inline;
+}
+.menu__list:hover .list__containt {
+  color: rgb(235, 215, 164);
+}
+.menu__list:hover .list__containt {
+  display: inline-block;
+  transform: translateX(5px);
+  transition: all 0.1s ease;
+}
+
+/* //// visit content*/
+.visit {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  color: grey;
+}
+.visit > h2 {
+  color: white;
+  font-size: 30px;
+}
+.visit > a {
+  text-decoration: none;
+  color: black;
+}
+.visit-dia {
+  color: rgb(235, 215, 164);
+}
+.book {
+  color: white;
+}
+.cont {
+  color: rgb(227, 167, 16);
+}
+
+@media screen and (max-width: 768px) {
+  .find {
+    display: none;
+  }
+  .main-header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menu {
+    order: 2;
+    justify-self: right;
+    padding-right: 5px;
+    padding-left: 0px;
+  }
+  .header-cont {
+    order: 1;
+    margin: 0;
+    padding-left: 15px;
+    align-self: center;
+  }
+}
