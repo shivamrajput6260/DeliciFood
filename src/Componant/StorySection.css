@@ -1,0 +1,244 @@
+.story-section {
+  padding: 170px 0px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background-color: #171819;
+}
+.story-main {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4.5fr;
+}
+.left-img {
+  justify-self: self-start;
+  align-self: center;
+}
+.img-cont {
+  position: absolute;
+  height: 384px;
+  width: 281px;
+  left: 20%;
+  top: 74%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  width: 100%;
+  width: min(1200px, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  justify-items: start;
+}
+.our-story {
+  width: 360px;
+  padding: 0px 20px;
+  padding-right: 90px;
+}
+.our {
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: rgb(245, 222, 165);
+}
+.pattern-imgs {
+  color: rgb(245, 222, 165);
+  width: 110px;
+  margin: auto;
+  padding: 15px 0px;
+}
+.every {
+  font-size: 50px;
+  line-height: 70px;
+  font-family: initial;
+  font-weight: 500;
+}
+
+.pera {
+  width: 100%;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: system-ui;
+  padding-top: 15px;
+}
+.booking-info {
+  padding-top: 35px;
+}
+.book-thro {
+  font-weight: bold;
+}
+.book-thro > a {
+  display: block;
+  text-decoration: none;
+  color: rgb(245, 222, 165);
+  padding: 10px 0px;
+  font-size: x-large;
+}
+.book-thro > a::after {
+  display: block;
+  content: "";
+  border-bottom: double 3px rgb(245, 222, 165);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  border-width: 4px;
+}
+.book-thro > a:hover:after {
+  transform: scaleX(0.55);
+}
+
+.read {
+  margin: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  border: 2px solid rgb(245, 222, 165);
+  line-height: 70px;
+  height: 24px;
+  width: 180px;
+  background-color: black;
+  color: rgb(245, 222, 165);
+  z-index: 1;
+  overflow: hidden;
+  padding: 15px 0px;
+  position: relative;
+  display: block;
+  transition-duration: 0.2s;
+  top: 15px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.read:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  border-radius: 0 0 100% 100%;
+  z-index: -1;
+  background-color: rgb(245, 222, 165);
+  opacity: 1;
+  transition: all 0.4s ease, opacity ease;
+}
+.read:after {
+  position: absolute;
+  content: "read more";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease;
+}
+
+.read:hover:before {
+  height: 100%;
+  opacity: 1;
+  border-radius: 0%;
+}
+.read:hover:after {
+  opacity: 0;
+}
+
+.read:hover {
+  transition-duration: 0.2s;
+}
+
+.btn-read {
+  display: block;
+  color: black;
+  position: relative;
+  bottom: -700%;
+  transition: 0.4s;
+  padding: 0px 40px;
+}
+.read:hover .btn-read {
+  bottom: 100%;
+}
+.our-storyimg {
+  padding: 0px 20px;
+  position: relative;
+  padding-left: 90px;
+}
+.img-over {
+  height: 382px;
+  width: 281px;
+  position: relative;
+}
+.cross-img {
+  width: 281px;
+  height: 380px;
+  position: absolute;
+}
+.second-img {
+  padding: 18% 0px;
+  position: absolute;
+  width: 280px;
+}
+.second-img > img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.img-1 {
+  height: 100%;
+  width: 100%;
+}
+
+.circle {
+  position: relative;
+  width: 158px;
+  height: 158px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  top: -652px;
+  right: -495px;
+}
+
+.img-logo {
+  position: absolute;
+  width: 133px;
+  height: 134px;
+  border-radius: 50%;
+}
+.img-logo > img {
+  width: 100%;
+  object-fit: contain;
+}
+.text {
+  position: absolute;
+  width: 133px;
+  height: 134px;
+  animation: rotateText 10s linear infinite;
+  margin: 0;
+  color: rgb(245, 222, 165);
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text span {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform-origin: 0 67px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+}

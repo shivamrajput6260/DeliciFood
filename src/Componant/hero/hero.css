@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: serif;
 }
 
 body {
+  position: relative;
   height: 100%;
   width: 100%;
   background: rgb(0, 0, 0);
@@ -17,15 +18,16 @@ body {
 
 .main {
   position: relative;
-  height: 100vh;
   width: 100%;
   color: #fff;
 }
 
-.main .slider {
+.main > .slider {
   position: relative;
-  height: 100vh;
+  height: 950px;
   width: 100%;
+  display: flex;
+  overflow: hidden;
 }
 
 .main .slider .slides {
@@ -71,7 +73,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-}
+} 
 
 .main .slider .slides .hero-inner > * {
   opacity: 0;
@@ -264,7 +266,7 @@ body {
 }
 
 .button:hover {
-  padding-top: 20px;
+  padding-top: 15px;
   transition-duration: 0.2s;
   color: black;
 }
@@ -289,7 +291,7 @@ body {
   background-color: transparent;
   justify-content: center;
   align-items: center;
-  top: 50%;
+  top: 44%;
   left: 30px;
   transform: rotate(45deg);
   border: 1px solid rgb(247, 212, 124);
@@ -312,7 +314,7 @@ body {
   background-color: transparent;
   justify-content: center;
   align-items: center;
-  top: 50%;
+  top: 44%;
   right: 30px;
   transform: rotate(45deg);
   border: 1px solid rgb(247, 212, 124);
@@ -340,16 +342,16 @@ body {
 }
 .my-div-a {
   position: absolute;
-  width: 90px;
-  height: 95px;
-  top: 84vh;
-  right: 5%;
-  z-index: 1;
+  width: 110px;
+  height: 110px;
+ right: 3%;
+    z-index: 1;
+    bottom: 65px;
 }
 
 .book-rot {
-  width: 87px;
-  height: 92px;
+  width: 110px;
+  height: 110px;
   border: 1px solid rgb(245, 222, 165);
   position: absolute;
   display: flex;
@@ -362,13 +364,15 @@ body {
   margin: auto;
   background-color: rgb(235, 215, 164);
   object-fit: contain;
-  width: 100%;
-  height: 100%;
+  width: 110px;
+  height: 110px;
   position: absolute;
   color: black;
 }
 .book-icon > p {
   margin: 0;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 @keyframes mymove {
@@ -381,10 +385,10 @@ body {
 
 .hero-sp {
   text-transform: uppercase;
-  letter-spacing: 4px;
-  color: rgb(245, 222, 165);
-  font-size: 13px;
-  font-weight: 500;
+    letter-spacing: 7px;
+    color: rgb(245, 222, 165);
+    font-size: 13px;
+    font-weight: lighter;
 }
 .hero-content {
   margin: 0px 100px;
@@ -403,7 +407,7 @@ body {
 .flav > .sea {
   padding: 0px 150px;
 }
-.text {
+.textes {
   font-size: 23px;
   color: white;
   margin-top: 10px;

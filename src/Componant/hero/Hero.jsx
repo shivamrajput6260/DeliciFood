@@ -40,11 +40,11 @@ const Hero = () => {
                                     <span className='sea'>the Seasons</span>
                                 </h1>
 
-                                <div className='text'>
+                                <div className='textes'>
                                     Come with family & feel the joy of mouthwatering food
                                 </div>
 
-                                <div class="button">
+                                <div className="button">
                                     <span className="simple-btn" >view our menu
                                     </span>
                                 </div>
@@ -68,10 +68,10 @@ const Hero = () => {
                                     <span>Flavors Inspired by</span> <br />
                                     <span className='sea'>the Seasons</span>
                                 </h1>
-                                <div className='text'>
+                                <div className='textes'>
                                     Come with family & feel the joy of mouthwatering food
                                 </div>
-                                <div class="button">
+                                <div className="button">
                                     <span className="simple-btn" target="_blank">view our menu
                                     </span>
                                 </div>
@@ -94,10 +94,10 @@ const Hero = () => {
                                     <span>Flavors Inspired by</span> <br />
                                     <span className='sea'>the Seasons</span>
                                 </h1>
-                                <div className='text'>
+                                <div className='textes'>
                                     Come with family & feel the joy of mouthwatering food
                                 </div>
-                                <div class="button">
+                                <div className="button">
                                     <span className="simple-btn" target="_blank">view our menu
                                     </span>
                                 </div>

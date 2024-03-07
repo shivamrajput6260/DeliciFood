@@ -36,35 +36,48 @@ const Offer = () => {
 
                 <div div className="offer-card">
 
-                    <div className="first-card">
+                    <div className="first-card ">
                         <div className='cross-pattern'>
                             <div className='first__img'>
                                 <img src="https://mediacity.co.in/delici/static/media/pattern-8.c0d26fdff7722980ba6f.svg" />
                             </div>
-                            <div className="first-img">
+                            <div className="first-img11">
                                 <img src='https://mediacity.co.in/delici/static/media/offer-image-1.c020474aea0ed9a09d2a.jpg' />
                             </div>
                         </div>
-                    </div>
-                    <div className="second-card">
-                        <div className='cross-pattern'>
-                            <div className='first__img'>
-                                <img src="https://mediacity.co.in/delici/static/media/pattern-8.c0d26fdff7722980ba6f.svg" />
-                            </div>
-                            <div className="first-img">
-                                <img src='https://mediacity.co.in/delici/static/media/offer-image-1.c020474aea0ed9a09d2a.jpg' />
-                            </div>
+                        <h3>Breakfast</h3>
+                        <div className='view'>
+                            <span>view Menu</span>
                         </div>
                     </div>
 
-                    <div className="third-card">
+                    <div className="first-card second">
                         <div className='cross-pattern'>
                             <div className='first__img'>
                                 <img src="https://mediacity.co.in/delici/static/media/pattern-8.c0d26fdff7722980ba6f.svg" />
                             </div>
-                            <div className="first-img">
-                                <img src='https://mediacity.co.in/delici/static/media/offer-image-1.c020474aea0ed9a09d2a.jpg' />
+                            <div className="first-img11">
+                                <img src=	'https://mediacity.co.in/delici/static/media/offer-image-2.d655d2ba6f4b2c6f7ac9.jpg' />
                             </div>
+                        </div>
+                        <h3>Appetizers</h3>
+                        <div className='view'>
+                            <span>view Menu</span>
+                        </div>
+                    </div>
+
+                    <div className="first-card ">
+                        <div className='cross-pattern'>
+                            <div className='first__img'>
+                                <img src="https://mediacity.co.in/delici/static/media/pattern-8.c0d26fdff7722980ba6f.svg" />
+                            </div>
+                            <div className="first-img11">
+                                <img src='https://mediacity.co.in/delici/static/media/offer-image-3.2220579532c7ff25ef9c.jpg' />
+                            </div>
+                        </div>
+                        <h3>Drinks</h3>
+                        <div className='view'>
+                            <span>view Menu</span>
                         </div>
                     </div>
 

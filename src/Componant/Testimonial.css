@@ -1,0 +1,91 @@
+.testmonial-section {
+  width: 100%;
+  position: relative;
+  text-align: center;
+ 
+}
+.test-main {
+  height: 1020px;
+  width: 100%;
+}
+
+.test-bg {
+  background-image: url("https://mediacity.co.in/delici/static/media/image-2.a39c46e803cccd321e96.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  margin-top: -70px;
+  position: absolute;
+}
+.test-inner {
+  width: min(880px, 100%);
+  margin: auto;
+  position: relative;
+  color: white;
+  top: 70px;
+  font-size: 50px;
+  font-family: "Forum", cursive;
+  font-weight: 100;
+}
+.inner-cont {
+  width: 873px;
+}
+.peras-cont {
+  padding-top: 45px;
+}
+.sepater {
+  margin-top: 32px;
+    margin-left: -58px;
+}
+
+.sap-btn {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 auto;
+  margin-right: 12px;
+  padding-bottom: 5px;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.sap-btn::after {
+  border: 1px solid #e4c590;
+  content: "";
+  height: 8px;
+  left: calc(100% + 36px);
+  margin-top: -5px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(0deg);
+  width: 8px;
+  animation: rotate 9s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.thumb-caro{
+  padding-top: 40px;
+}
+.wrapper{
+    width: 120px;
+    height: 100px;
+    margin: auto;
+    text-align: -webkit-center;
+}
+
+.borders>img{
+  border-radius: 50%;
+  width: 80px;
+}
+
+
+

@@ -1,0 +1,221 @@
+.bestspace-section {
+  padding: 0px 0px 100px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+   background-color: #171819;
+   
+}
+
+.best-main {
+  width: min(1410px, 100%);
+  display: grid;
+  margin: auto;
+  z-index: 10;
+  position: relative;
+  padding: 80px 15px 100px;
+  background-color: black;
+}
+.best-container {
+  width: 1170px;
+  padding: 0px 15px;
+  margin: 0px 105px;
+}
+.best-container:before {
+  background: url("https://mediacity.co.in/delici/static/media/pattern-9.f48b0172fd5efab9684e.svg")
+    50% repeat;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 15px;
+}
+.best-container:after {
+  background: url("https://mediacity.co.in/delici/static/media/pattern-9.f48b0172fd5efab9684e.svg")
+    50% repeat;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 15px;
+}
+.best-card {
+  width: min(1170px, 100%);
+  margin: auto;
+  display: grid;
+  top: 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 50px;
+  position: relative;
+  align-items: flex-start;
+  color: white;
+}
+.card-first {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.first-img {
+  position: relative;
+}
+
+.cross-patterns {
+  position: relative;
+  display: inline-block;
+}
+
+.cross-patterns:hover::after {
+  opacity: 0.2;
+}
+.cross-patterns::after:hover {
+  transform: scale(0);
+}
+
+.first-img:hover img {
+  transform: scale(1.05) rotate(3deg);
+}
+
+.first-img img {
+  transition: transform 1s ease;
+}
+.first-img {
+  position: relative;
+  overflow: hidden; /* Ensure the image doesn't overflow its container */
+}
+
+.blur-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -50%) scale(0);
+  width: 0;
+  height: 0;
+  transition: all ease-in-out 0.1ms;
+  background: rgb(245, 239, 219);
+  background: linear-gradient(
+    90deg,
+    rgb(238, 234, 221) 0%,
+    rgba(242, 240, 232, 0.594) 25%,
+
+    rgb(238, 232, 207) 0%,
+    rgba(244, 241, 232, 0.594) 25%
+  ); /* Semi-transparent orange color */
+  /* Apply blur to the background */
+  transition: opacity 0.1s ease; /* Add transition for smooth animation */
+  opacity: 0; /* Initially hidden */
+}
+
+.first-img:hover .blur-overlay {
+  opacity: 0.4; /* Show the overlay on hover */
+  animation: grow-to-bottom-right 350ms forwards;
+}
+
+@keyframes grow-to-bottom-right {
+  0% {
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.card-first > .views {
+  font-size: 26px;
+  padding: 15px 0px;
+  font-weight: lighter;
+  color: white;
+  font-family: math;
+}
+
+.views:hover {
+  color: rgb(245, 222, 165);
+}
+.contes {
+  width: 100%;
+  line-height: 25px;
+  font-size: 15px;
+  font-family: system-ui;
+  color: #a7a7a7;
+}
+.pri {
+  text-align: center;
+  color: #e4c590;
+  padding: 20px 0px;
+  font-size: 20px;
+}
+.mar {
+  top: 6px;
+}
+.box3{
+   display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  top: 44%;
+  left: 30px;
+  transform: rotate(45deg);
+  border: 1px solid rgb(247, 212, 124);
+  text-align: center;
+}
+.arrow-icon {
+  color: rgb(247, 212, 124);
+  /* transform: rotate(45deg); */
+  position: fixed;
+  transform: rotate(-45deg);
+}
+.box4 {
+  z-index: -1;
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  top: 60%;
+  right: 60px;
+  transform: rotate(45deg);
+  border: 1px solid rgb(247, 212, 124);
+  text-align: center;
+}
+.arrow-icon2 {
+  color: rgb(247, 212, 124);
+  position: fixed;
+  transform: rotate(-45deg);
+}
+
+.box3:hover {
+  background-color: rgb(247, 212, 124);
+}
+
+.box3:hover .arrow-icon {
+  color: black; /* Change this to the desired color for the arrow icon */
+}
+
+.box4:hover {
+  background-color: rgb(247, 212, 124);
+}
+.box4:hover .arrow-icon2 {
+  color: black; /* Change this to the desired color for the arrow icon */
+}
+.cent{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+                           

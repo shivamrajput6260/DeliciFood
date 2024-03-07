@@ -12,3 +12,184 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.text-gray {
+  color: #a0a0a0;
+}
+.text-white {
+  color: #fff;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 50;
+}
+.gold {
+  color: #e4c590;
+}
+
+.menu-spe {
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  border: 2px solid rgb(245, 222, 165);
+  line-height: 70px;
+  height: 24px;
+  width: 215px;
+  background-color: #0e0d0b;
+  color: #e4c590;
+  z-index: 1;
+  overflow: hidden;
+  padding: 15px 0px;
+  position: relative;
+  display: block;
+  transition-duration: 0.2s;
+  top: 15px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: system-ui;
+  font-size: 13px;
+}
+
+.menu-spe:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  border-radius: 0 0 100% 100%;
+  z-index: -1;
+  background-color: #e4c590;
+  opacity: 1;
+  transition: all 0.4s ease, opacity ease;
+}
+.menu-spe:after {
+  position: absolute;
+  content: "view all menu";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease;
+}
+
+.menu-spe:hover:before {
+  height: 100%;
+  opacity: 1;
+  border-radius: 0%;
+}
+.menu-spe:hover:after {
+  opacity: 0;
+}
+
+.menu-spe:hover {
+  transition-duration: 0.2s;
+}
+
+.btn-menu {
+  display: block;
+  color: #0e0d0b;
+  position: relative;
+  bottom: -700%;
+  transition: 0.4s;
+  text-align: center;
+  font-family: system-ui;
+}
+.menu-spe:hover .btn-menu {
+  bottom: 100%;
+}
+
+.title-box {
+  padding: 0px 15px;
+  margin-bottom: 50px;
+}
+.subtitles {
+  transform: scale(0.9);
+}
+.subtitles > span {
+  color: rgb(235, 191, 136);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-family: math;
+}
+
+.petterns-imges {
+  color: rgb(245, 222, 165);
+  padding: 15px 0px;
+}
+.petterns-imges > img {
+  width: 110px;
+  z-index: 666;
+}
+.de-menu {
+  padding: 10px 0px;
+  font-size: 50px;
+  color: white;
+  font-family: math;
+  font-weight: 100;
+  line-height: 70px;
+  word-spacing: 16px;
+  letter-spacing: 1px;
+  transform: scaleY(1.4);
+}
+
+.box1 {
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  top: 44%;
+  left: 30px;
+  transform: rotate(45deg);
+  border: 1px solid rgb(247, 212, 124);
+  text-align: center;
+}
+
+.arrow-icon {
+  color: rgb(247, 212, 124);
+  /* transform: rotate(45deg); */
+  position: fixed;
+  transform: rotate(-45deg);
+}
+.box2 {
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  top: 44%;
+  right: 30px;
+  transform: rotate(45deg);
+  border: 1px solid rgb(247, 212, 124);
+  text-align: center;
+}
+.arrow-icon2 {
+  color: rgb(247, 212, 124);
+  position: fixed;
+  transform: rotate(-45deg);
+}
+
+.box1:hover {
+  background-color: rgb(247, 212, 124);
+}
+
+.box1:hover .arrow-icon {
+  color: black; /* Change this to the desired color for the arrow icon */
+}
+
+.box2:hover {
+  background-color: rgb(247, 212, 124);
+}
+.box2:hover .arrow-icon2 {
+  color: black; /* Change this to the desired color for the arrow icon */
+}

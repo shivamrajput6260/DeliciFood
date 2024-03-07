@@ -117,7 +117,6 @@
 }
 .con-bor {
   padding: 10px 0px;
-  /* border-top: 1px solid cadetblue; */
   border-bottom: 1px solid cadetblue;
   margin: 0;
 }
@@ -141,8 +140,6 @@ li > .pad {
 .dropdown-content > ul > li {
   list-style: none;
   text-align: left;
-  /* border-top: 1px solid cadetblue; */
-  /* padding: 10px 0px; */
 }
 
 .sidebar-img {
@@ -202,11 +199,10 @@ li > button > a {
 }
 
 .find {
-   text-transform: uppercase;
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
- margin-right: 80px;
-  /* display: inline-block; */
+  margin-right: 80px;
   border: 2px solid rgb(245, 222, 165);
   text-align: center;
   line-height: 60px;
@@ -218,11 +214,12 @@ li > button > a {
   overflow: hidden;
   justify-self: right;
   align-self: center;
-   padding: 15px 0px;
+  padding: 15px 0px;
   position: relative;
   display: block;
   transition-duration: 0.2s;
 }
+
 .find:before {
   position: absolute;
   content: "";
@@ -233,7 +230,6 @@ li > button > a {
   border-radius: 0 0 100% 100%;
   z-index: -1;
   background-color: black;
-  /* color: white; */
   opacity: 1;
   transition: all 0.4s ease, opacity ease;
 }
@@ -260,7 +256,6 @@ li > button > a {
   opacity: 0; /* Hide the "View Our Menu" text on hover */
 }
 
-
 .find:hover {
   padding-top: 20px;
   transition-duration: 0.2s;
@@ -268,7 +263,7 @@ li > button > a {
 
 .btn-find {
   display: block;
-  color:white;
+  color: white;
   position: relative;
   bottom: -700%;
   transition: 0.4s;
@@ -311,9 +306,8 @@ li > button > a {
 .menu__list {
   list-style: none;
   font-size: 12px;
-
-  /* border-bottom: 1px solid cadetblue; */
 }
+
 .menu__list__diamond {
   display: none;
   color: rgb(235, 215, 164);
