@@ -10,6 +10,8 @@ import MenuSection from "./Componant/MenuSection";
 import BestSpece from "./Componant/BestSpece";
 import Testimonial from "./Componant/Testimonial";
 import ContactSection from "./Componant/ContactSection";
+import OurStrengthSec from "./Componant/OurStrengthSec";
+
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
       <BestSpece />
       <Testimonial/>
       <ContactSection/>
+      <OurStrengthSec/>
     </>
   );
 }

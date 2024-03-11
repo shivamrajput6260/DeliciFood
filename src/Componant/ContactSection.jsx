@@ -52,9 +52,9 @@ const ContactSection = () => {
                                             <input type="date" placeholder=""
                                             />
                                             <p className='datesss'>DD-MM-YY <span><FaAngleDown className='fa-Arrow' /></span> </p>
-                                        
+
                                             <div>
-                                                
+
                                             </div>
                                         </div>
                                         <div className='time__field'>
@@ -109,17 +109,40 @@ const ContactSection = () => {
                                 <div className="requ-infor">
                                     <div className='req-book'>Booking request
                                     </div>
-                                    
+
                                     <a href='' className='num'>
                                         +88-123-123456
+
                                     </a>
-                                    <div className='squre-icon'>
+                                    <div     className='square-icon'>
                                         <span></span>
                                     </div>
-                                   
+                                    <ul className='list-info'>
+                                    <li className='loc-cont'>
+                                        <strong>Location</strong>
+                                        <br/>
+                                            Restaurant St, Delicious City, London 9578, UK
+                                    </li>
+                                       
+                                        <li className='loc-cont'>
+                                            <strong>Lunch Time</strong>
+                                            <br />
+                                            Monday to Sunday 
+                                             <br />
+                                            11.00 am - 2.30pm
+                                        </li>
+                                        <li className='loc-cont'>
+                                            <strong>Dinner Time</strong>
+                                            <br />
+                                            Monday to Sunday
+                                            <br/>
+                                            05.00 pm - 10.00pm
+                                        </li>
+                                    </ul>
+
                                 </div>
-                                </div>
-                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
