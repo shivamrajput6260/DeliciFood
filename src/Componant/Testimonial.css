@@ -14,10 +14,11 @@
   background-image: url("https://mediacity.co.in/delici/static/media/image-2.a39c46e803cccd321e96.jpg");
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 80%;
   z-index: -999;
   margin-top: -70px;
   position: absolute;
+  background-repeat: no-repeat;
 }
 .test-inner {
   width: min(880px, 100%);

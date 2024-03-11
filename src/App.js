@@ -11,6 +11,7 @@ import BestSpece from "./Componant/BestSpece";
 import Testimonial from "./Componant/Testimonial";
 import ContactSection from "./Componant/ContactSection";
 import OurStrengthSec from "./Componant/OurStrengthSec";
+import EventSection from "./Componant/EventSection";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Testimonial/>
       <ContactSection/>
       <OurStrengthSec/>
+      <EventSection/>
     </>
   );
 }

@@ -1,47 +1,32 @@
-.bestspace-section {
-  padding: 0px 0px 100px;
+.strength-section {
+  padding: 100px 0px 60px;
   width: 100%;
   position: relative;
   text-align: center;
    background-color: #171819;
-   
+       top: -250px;
 }
 
-.best-main {
-  width: min(1410px, 100%);
-  display: grid;
-  margin: auto;
-  z-index: 10;
+.strength-main {
   position: relative;
-  padding: 80px 15px 100px;
-  background-color: black;
 }
-.best-container {
-  width: 1170px;
+.left-our{
+  position: absolute;
+  bottom: 25px;
+}
+.right-our{
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
+
+.strength-container {
+  width: min(1170px, 100%);
   padding: 0px 15px;
   margin: 0px 105px;
 }
-.best-container:before {
-  background: url("https://mediacity.co.in/delici/static/media/pattern-9.f48b0172fd5efab9684e.svg")
-    50% repeat;
-  content: "";
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0px;
-  width: 15px;
-}
-.best-container:after {
-  background: url("https://mediacity.co.in/delici/static/media/pattern-9.f48b0172fd5efab9684e.svg")
-    50% repeat;
-  content: "";
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0px;
-  width: 15px;
-}
-.best-card {
+
+.our-card {
   width: min(1170px, 100%);
   margin: auto;
   display: grid;
@@ -54,10 +39,8 @@
   color: white;
 }
 .cards-one {
-      /* position: relative; */
-    width: 23%;
-    /* overflow: hidden; */
-    background-color: #151616;
+    width: 100%;
+    background-color:#151616;
     height: 290px;
     margin-bottom: 50px;
 
@@ -73,7 +56,7 @@
     padding: 24px;
 }
 .cards-one .first-image img {
-  transition: transform 0.1s ;
+  transition: transform 0.1s 0.1ms;
 }
 
 .cards-one:hover .first-image img {
@@ -81,5 +64,8 @@
 }
 .cros-patterns{
  padding-top: 40px;
+}
+.back{
+  background-color: #121111;
 }
 

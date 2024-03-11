@@ -1,0 +1,29 @@
+.Event-section {
+  padding: 100px 0px 60px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+   background-color: #171819;
+   top: -250px;
+}
+
+.Event-main {
+  width: 100%;
+  display: grid;
+  top: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 50px;
+  position: relative;
+  align-items: flex-start;
+  color: white;
+}
+.left-our{
+  position: absolute;
+  bottom: 25px;
+}
+.right-our{
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
